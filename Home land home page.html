@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homeland Security Shipment Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Homeland Security Shipment Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="#track">Track Shipment</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="track">
+            <h2>Track Your Shipment</h2>
+            <form id="trackingForm">
+                <label for="trackingNumber">Enter Tracking Number:</label>
+                <input type="text" id="trackingNumber" required>
+                <button type="submit">Track</button>
+            </form>
+            <div id="trackingResult"></div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" required>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Homeland Security. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
