@@ -71,6 +71,16 @@
         button:hover {
             background: #0056b3;
         }
+
+        .admin-section {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .tracking-result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -80,6 +90,7 @@
             <ul>
                 <li><a href="#track">Track Shipment</a></li>
                 <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#admin" id="adminLink">Admin</a></li>
             </ul>
         </nav>
     </header>
@@ -92,7 +103,7 @@
                 <input type="text" id="trackingNumber" required>
                 <button type="submit">Track</button>
             </form>
-            <div id="trackingResult"></div>
+            <div id="trackingResult" class="tracking-result"></div>
         </section>
 
         <section id="contact">
@@ -109,6 +120,15 @@
                 <button type="submit">Send</button>
             </form>
         </section>
+
+        <section id="admin" class="admin-section">
+            <h2>Admin - Generate Tracking Number</h2>
+            <form id="adminForm">
+                <label for="adminTrackingNumber">Generated Tracking Number:</label>
+                <input type="text" id="adminTrackingNumber" readonly>
+                <button type="button" id="generateButton">Generate Tracking Number</button>
+            </form>
+        </section>
     </main>
 
     <footer>
@@ -116,25 +136,4 @@
     </footer>
 
     <script>
-        document.getElementById('trackingForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const trackingNumber = document.getElementById('trackingNumber').value;
-
-            // Simulate tracking result (replace with actual API call)
-            const trackingResult = `Tracking Number: ${trackingNumber} - Status: In Transit`;
-            document.getElementById('trackingResult').innerText = trackingResult;
-        });
-
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-
-            // Simulate sending email (replace with actual email sending logic)
-            alert(`Email sent!\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`);
-        });
-    </script>
-</body>
-</html>
+        //
