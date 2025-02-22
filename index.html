@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homeland Security Shipment Tracker</title>
+    <title>Aurum Fortis - Precious Metals Storage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@
         }
 
         header {
-            background: #007BFF;
+            background: #FFD700; /* Gold color */
             color: white;
             padding: 10px 0;
             text-align: center;
@@ -44,7 +44,7 @@
         footer {
             text-align: center;
             padding: 10px 0;
-            background: #007BFF;
+            background: #FFD700; /* Gold color */
             color: white;
             position: relative;
             bottom: 0;
@@ -72,46 +72,62 @@
             background: #0056b3;
         }
 
-        .admin-section {
-            display: none;
+        .faq {
             margin-top: 20px;
         }
 
-        .tracking-result {
-            margin-top: 10px;
-            font-weight: bold;
+        .faq-item {
+            margin-bottom: 10px;
+        }
+
+        .faq-item h4 {
+            cursor: pointer;
+            margin: 0;
+        }
+
+        .faq-item p {
+            display: none;
+            margin: 5px 0 0 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Homeland Security Shipment Tracker</h1>
+        <h1>Aurum Fortis</h1>
         <nav>
             <ul>
-                <li><a href="#track">Track Shipment</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#admin" id="adminLink">Admin</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="track">
-            <h2>Track Your Shipment</h2>
-            <form id="trackingForm">
-                <label for="trackingNumber">Enter Tracking Number:</label>
-                <input type="text" id="trackingNumber" required>
-                <button type="submit">Track</button>
-            </form>
-            <div id="trackingResult" class="tracking-result"></div>
+        <section id="home">
+            <h2>Welcome to Aurum Fortis</h2>
+            <p>Your trusted partner in the secure storage of precious metals. We provide state-of-the-art facilities and unparalleled service to ensure your investments are safe and sound.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Aurum Fortis is dedicated to providing the highest level of security and service for your precious metals. Our team of experts is committed to ensuring that your investments are protected in a secure and reliable environment.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Secure Storage Solutions</li>
+                <li>Insurance Options for Your Assets</li>
+                <li>Regular Audits and Reporting</li>
+                <li>24/7 Surveillance and Monitoring</li>
+                <li>Expert Consultation Services</li>
+            </ul>
         </section>
 
         <section id="contact">
             <h2>Contact Us</h2>
             <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-                <label for="subject">Subject:</label>
-                <input type="text"
+                <label for
